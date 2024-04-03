@@ -1,0 +1,53 @@
+.prices {
+  .prices__item {
+    width: 260px;
+    height: 200px;
+    display: flex;
+    align-items: flex-start;
+    background-color: $white-color;
+    border: 1px solid $divider-color;
+    border-radius: 6px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    padding: 16px;
+    gap: 16px 0;
+    flex-wrap: wrap;
+  }
+
+  .prices__link {
+    display: inline-block;
+    font-size: 0px;
+    margin-left: auto;
+    align-self: center;
+  }
+
+  .prices__fade {
+    position: absolute;
+    width: 24px;
+    height: 200px;
+    background: linear-gradient(90deg, $main-transperent-color, $main-color);
+    right: 0;
+    bottom: 16px;
+    z-index: 2;
+  }
+
+  .prices__note {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: $main-text-color;
+    margin: 16px 16px 0 0;
+
+    .prices__offer {
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      font-weight: 500;
+      margin-top: 16px;
+
+      .prices__icon-more {
+        vertical-align: top;
+      }
+    }
+  }
+}

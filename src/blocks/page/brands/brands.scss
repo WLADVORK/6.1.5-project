@@ -1,0 +1,31 @@
+.brands {
+  
+  .brands__item {
+    width: 240px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    background-color: $white-color;
+    border: 1px solid $divider-color;
+    border-radius: 6px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    padding: 0 16px;
+  }
+
+  .brands__link {
+    display: inline-block;
+    font-size: 0px;
+    margin-left: auto;
+  }
+
+  .brands__fade {
+    position: absolute;
+    width: 24px;
+    height: 81px;
+    background: linear-gradient(90deg, $main-transperent-color, $main-color);
+    right: 0;
+    bottom: 16px;
+    z-index: 2;
+  }
+}

@@ -1,0 +1,15 @@
+.header {
+  height: 88px;
+  background-color: $white-color;
+  display:flex;
+  gap:16px; 
+  align-items: center;
+
+  .header__icon-search {
+    margin-left: auto;
+  }
+
+  .header__image {
+    display: block;
+  }
+}

@@ -1,0 +1,44 @@
+.page {
+  font-family: 'TT Lakes', sans-serif;
+  font-weight: normal;
+  margin: 0;
+  background-color: $main-color;
+
+  .page__upperMenu {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .page__title {
+    margin-top: 24px;
+  }
+
+  .page__slideMenu {
+    margin-top: 24px;
+  }
+
+  .page__main {
+    margin-top: 9px;
+  }
+
+  .page__brands {
+    margin-left: 16px;
+  }
+
+  .page__technic {
+    margin-left: 16px;
+  }
+
+  .page__prices {
+    margin-left: 16px;
+  }
+
+  .page__footer {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .page__popup-feedback {
+    margin: 0 16px;
+  }
+}

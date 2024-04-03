@@ -1,0 +1,39 @@
+.technic {
+  .technic__item {
+    width: 240px;
+    height: 160px;
+    display: flex;
+    align-items: flex-start;
+    background-color: $white-color;
+    border: 1px solid $divider-color;
+    border-radius: 6px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    padding: 16px;
+  }
+
+  .technic__link {
+    display: inline-block;
+    font-size: 0px;
+    margin-left: auto;
+    align-self: flex-end;
+  }
+
+  .technic__fade {
+    position: absolute;
+    width: 24px;
+    height: 166px;
+    background: linear-gradient(90deg, $main-transperent-color, $main-color);
+    right: 0;
+    bottom: 16px;
+    z-index: 2;
+  }
+
+  .technic__name {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: $main-text-color;
+    font-weight: 500;
+  }
+}

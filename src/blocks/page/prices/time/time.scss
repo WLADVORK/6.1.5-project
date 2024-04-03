@@ -1,0 +1,20 @@
+.time {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  .time__name {
+    white-space: pre;
+    font-size: 14px;
+    line-height: 16px;
+    color: $secondary-text-color;
+    opacity: 0.72;
+  }
+
+  .time__value {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: $main-text-color;
+  }
+}

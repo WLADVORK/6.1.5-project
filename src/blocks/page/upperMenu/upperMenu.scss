@@ -1,0 +1,48 @@
+.upperMenu {
+  height: 88px;
+  background-color: $white-color;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .upperMenu__shadow {
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    background-color: $shadow-color;
+  }
+
+  .upperMenu__divider--left {
+    display: none;
+  }
+
+  .upperMenu__divider {
+    width: 2px;
+    height: 32px;
+    background-color: $divider-color;
+    margin-left: auto;
+  }
+
+  .upperMenu__icon-profile {
+    display: none;
+  }
+
+  .upperMenu__icon-call {
+    display: none;
+  }
+
+  .upperMenu__icon-chat {
+    display: none;
+  }
+
+  .upperMenu__icon-profile {
+    display: none;
+  }
+
+  .upperMenu__image {
+    display: block;
+  }
+}

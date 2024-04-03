@@ -1,0 +1,22 @@
+.footer {
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  color: $secondary-text-color;
+  opacity: 0.72;
+  border-top: 1px solid $shadow-color;
+
+  .footer__team {
+    white-space: pre;
+    padding: 16px 16px 0;
+  }
+
+  .footer__privacy {
+    white-space: pre;
+    padding: 16px 16px 0;
+  }
+
+  .footer__note {
+    padding: 16px 16px 0;
+  }
+}

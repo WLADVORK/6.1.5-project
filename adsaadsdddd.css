@@ -1,0 +1,157 @@
+@font-face {
+	font-family: 'TTLakes'; 
+	src: url(fonts/TTLakes-Regular.woff); 
+}
+
+@font-face {
+	font-family: 'TTLakes-Medium'; 
+	src: url(fonts/TTLakes-Medium.woff); 
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+.name {
+    background: linear-gradient(90deg,#F8F8F8, #FFFFFF);
+    border-top: 1px solid #D9FFF5;
+}
+
+.name__text {
+    margin: 15px 0 32px;
+    font-family: TTLakes; 
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color:#7E7E82;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.page__brands {
+    margin-left: 16px;
+}
+
+
+
+.brands__item {
+    width: 240px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    border:1px solid #EAEAEA;
+    border-radius: 6px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    padding: 0 16px;
+}
+
+.brands__link {
+    display: inline-block;
+    font-size: 0px;
+    margin-left: auto;
+}
+
+.brands__fade {
+    position: absolute;
+    width: 24px;
+    height: 81px;
+    background: linear-gradient(90deg,#F8F8F800,#F8F8F8);
+    right: 0;
+    top:-9px;
+    z-index: 2;
+}
+
+
+.swiper-pagination{
+    position: static;
+    margin: 16px 0 0 -16px;
+    height: 12px;
+}
+
+.swiper-pagination-bullet {
+    background: #DDDDDD;
+    height: 12px;
+    width: 12px;
+    opacity: 1;
+    vertical-align: top;
+    margin: 0 6px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #B5B6BC;
+}
+
+.expand {
+    display: none;
+    width: 134px;
+    height: 24px;
+    margin-top: 24px;
+}
+
+
+.expand__text {
+    display: inline-block;
+    font-family: TTLakes-Medium;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    vertical-align: top;
+    margin-left: 9px;
+}
+
+@media (min-width:768px) {
+
+    .name__text {
+        margin-left: 24px;
+    }
+
+    .page__brands {
+        margin: 24px 0 0 24px;
+    }
+
+    .brands__content {
+        height: 160px;
+        flex-wrap: wrap;
+        overflow: hidden;
+        gap: 16px 0;
+    }
+    
+    .brands__item {
+        width: 224px;
+    } 
+
+    .swiper-pagination {
+        display: none;
+    }
+
+    .brands__fade {
+        display: none;
+    }
+
+    .expand {
+        display: block;
+    }
+}
+
+@media (min-width:1120px) {
+
+    .name__text {
+        margin-left: 32px;
+    }
+
+    .page__brands {
+        margin-left: 32px;
+    }
+    
+    .brands__item {
+        width: 240px;
+    } 
+}

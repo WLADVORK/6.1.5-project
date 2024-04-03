@@ -1,0 +1,18 @@
+.swiper-pagination{
+  position: static;
+  margin: 16px 0 0 -16px;
+  height: 12px;
+
+  .swiper-pagination-bullet {
+    background: $pagination-bullet;
+    height: 12px;
+    width: 12px;
+    opacity: 1;
+    vertical-align: top;
+    margin: 0 6px !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: $pagination-bullet-active;
+  }
+}

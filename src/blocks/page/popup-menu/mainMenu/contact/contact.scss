@@ -1,0 +1,42 @@
+.contact {
+  height: 124px;
+  display: flex;
+  flex-wrap: wrap;
+  gap:0 16px;
+  align-content: flex-start;
+
+  .contact__email {
+    font-family: 'TT Lakes';
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-size: 16px;
+    color: $main-text-color;
+    margin-top: 16px;
+  }
+
+  .contact__number {
+    font-family: 'TT Lakes';
+    font-weight: bold;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+    font-size: 24px;
+    color: $main-text-color;
+    margin-top: 12px;
+    white-space: nowrap;
+  }
+
+  .contact__icon-call {
+    height: 40px;
+  }
+
+  .contact__icon-chat {
+    height: 40px;
+  }
+
+  .contact__icon-profile {
+    height: 40px;
+  }
+
+
+}

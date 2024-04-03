@@ -1,0 +1,29 @@
+.title {
+  display: flex;
+  height: 40px;
+  width:100%;
+
+  .title__highlight {
+    width: 4px;
+    height: 40px;
+    position: absolute;
+    left:0;
+  }
+
+  .title__highlight {
+    width: 4px;
+    height: 40px;
+    position: absolute;
+    left:0;
+  }
+
+  .title__text {
+    font-family: 'TT Lakes';
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: -0.6px;
+    line-height: 40px;
+    color:$main-text-color;
+    margin-left: 16px;
+  }
+}

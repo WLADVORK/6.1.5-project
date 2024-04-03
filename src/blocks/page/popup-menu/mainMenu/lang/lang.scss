@@ -1,0 +1,18 @@
+.lang  {
+  width: 87px;
+  height: 24px;
+
+  .lang__text {
+    font-family: 'TT Lakes';
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-size: 16px;
+    color: $main-text-color;
+  }
+
+  .lang__text--active {
+    color: $secondary-text-color;
+  }
+
+}

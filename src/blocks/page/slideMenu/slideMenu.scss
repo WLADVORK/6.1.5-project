@@ -1,0 +1,34 @@
+.slideMenu {
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+
+  .slideMenu__button {
+    height: 40px;
+    padding: 8px 16px;
+    white-space: pre;
+    color: $secondary-text-color;
+
+    &:first-child {
+      margin-left: 16px;
+    }
+
+    &:hover {
+      border: 2px solid #b8ffec;
+      padding: 6px 14px;
+      border-radius: 6px;
+    }
+  }
+
+  .slideMenu__fade {
+    width: 24px;
+    height: 40px;
+    background-image: linear-gradient(
+      to right,
+      $main-transperent-color,
+      $main-color
+    );
+    position: absolute;
+    right: 0;
+  }
+}
