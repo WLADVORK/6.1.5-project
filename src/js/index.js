@@ -20,14 +20,38 @@ if (window.innerWidth <= 768) {
 
 const burger = document.querySelector('.upperMenu__icon-burger')
 const popupMenu = document.querySelector('.popup-menu')
-const cancel = popupMenu.querySelector('.header__icon-cancel')
+const popupFeedback = document.querySelector('.popup-feedback')
+const popupCall = document.querySelector('.popup-call')
+const cancelMenu = popupMenu.querySelector('.header__icon-cancel')
+const cancelFeedback = popupFeedback.querySelector('.feedback-wraper__icon-cancel')
+const cancelCall = popupCall.querySelector('.call-wraper__icon-cancel')
+const chat = popupMenu.querySelector('.contact__icon-chat')
+const call = popupMenu.querySelector('.contact__icon-call')
+
 
 burger.addEventListener('click', () => {
   popupMenu.style.display = 'flex';
 })
 
-cancel.addEventListener('click', () => {
+cancelMenu.addEventListener('click', () => {
   popupMenu.style.display = 'none';
 })
+
+chat.addEventListener('click', () => {
+  popupFeedback.style.display = 'flex';
+})
+
+cancelFeedback.addEventListener('click', () => {
+  popupFeedback.style.display = 'none';
+})
+
+call.addEventListener('click', () => {
+  popupCall.style.display = 'flex';
+})
+
+cancelCall.addEventListener('click', () => {
+  popupCall.style.display = 'none';
+})
+
 
 console.log('Works!')

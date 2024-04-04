@@ -1,6 +1,20 @@
 .brands {
   
-  .brands__item {
+  &__heading {
+    margin-bottom: 16px;
+  }
+
+  &__content {
+
+    @media (min-width: 768px) {
+      height: 160px;
+      flex-wrap: wrap;
+      overflow: hidden;
+      gap: 16px 0;
+    }
+  }
+
+  &__item {
     width: 240px;
     height: 72px;
     display: flex;
@@ -11,15 +25,19 @@
     flex-shrink: 0;
     box-sizing: border-box;
     padding: 0 16px;
+
+    @media (min-width: 768px) {
+      width: 224px;
+    }
   }
 
-  .brands__link {
+  &__link {
     display: inline-block;
     font-size: 0px;
     margin-left: auto;
   }
 
-  .brands__fade {
+  &__fade {
     position: absolute;
     width: 24px;
     height: 81px;
@@ -27,5 +45,9 @@
     right: 0;
     bottom: 16px;
     z-index: 2;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
   }
 }

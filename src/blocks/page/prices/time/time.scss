@@ -3,7 +3,7 @@
   flex-direction: column;
   gap: 4px;
 
-  .time__name {
+  &__name {
     white-space: pre;
     font-size: 14px;
     line-height: 16px;
@@ -11,7 +11,7 @@
     opacity: 0.72;
   }
 
-  .time__value {
+  &__value {
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.2px;

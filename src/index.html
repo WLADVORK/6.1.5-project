@@ -36,11 +36,6 @@
       <div class="upperMenu__shadow"></div>
     </div>
     <div class="page__title title">
-      <img
-        class="title__highlight"
-        src="img/highlight.svg"
-        alt="title-highlight"
-      />
       <div class="title__text">Услуги и сервисы</div>
     </div>
     <div class="page__slideMenu slideMenu">
@@ -278,6 +273,7 @@
               class="technic__icon-go" /></a
         ></div>
       </div>
+      <div class="technic__fade"></div>
       <div class="swiper-pagination"></div>
       <div class="expand"
         ><img
@@ -290,7 +286,7 @@
 
     <div class="page__prices prices swiper">
       <div class="prices__heading heading"
-        ><span class="heading__text">Ремонт различных видов техники</span></div
+        ><span class="heading__text">Цены на услуги</span></div
       >
       <div class="prices__content swiper-wrapper">
         <div class="prices__item swiper-slide">
@@ -404,6 +400,7 @@
           /></a>
         </div>
       </div>
+      <div class="prices__fade"></div>
       <div class="swiper-pagination"></div>
       <div class="prices__note"
         >Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную
@@ -533,7 +530,46 @@
             ></textarea>
           </label>
         </form>
+        <div class="feedback-wraper__text">Нажимая “отправить”, вы даете согласие на <span class="feedback-wraper__red">обработку персональных данных</span> и соглашаетесь с нашей <span class="feedback-wraper__red">политикой конфиденциальности</span></div>
       </div>
+      <div class="popup-feedback__icon-send"
+      ><img
+        class="popup-feedback__image"
+        alt="send-icon"
+        src="img/send.svg"
+      />
+    </div>
+    </div>
+
+    <div class="page__popup-call popup-call">
+      <div class="popup-call__wraper call-wraper">
+        <div class="call-wraper__icon-cancel"
+          ><img
+            class="popup-call__image"
+            alt="cancel-icon"
+            src="img/cancel.svg"
+          />
+        </div>
+        <div class="call-wraper__heading">Заказать звонок</div>
+        <form action="" method="get" class="call-wraper__form">
+          <label class="call-wraper__label">
+            <input
+              maxlength="30"
+              type="tel"
+              class="call-wraper__input"
+              placeholder="Телефон"
+            />
+          </label>
+        </form>
+        <div class="call-wraper__text">Нажимая “отправить”, вы даете согласие на <span class="call-wraper__red">обработку персональных данных</span> и соглашаетесь с нашей <span class="call-wraper__red">политикой конфиденциальности</span></div>
+      </div>
+      <div class="popup-call__icon-send"
+      ><img
+        class="popup-call__image"
+        alt="send-icon"
+        src="img/send.svg"
+      />
+    </div>
     </div>
   </body>
 </html>

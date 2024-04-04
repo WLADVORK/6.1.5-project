@@ -6,17 +6,17 @@
   opacity: 0.72;
   border-top: 1px solid $shadow-color;
 
-  .footer__team {
+  &__team {
     white-space: pre;
     padding: 16px 16px 0;
   }
 
-  .footer__privacy {
+  &__privacy {
     white-space: pre;
     padding: 16px 16px 0;
   }
 
-  .footer__note {
+  &__note {
     padding: 16px 16px 0;
   }
 }

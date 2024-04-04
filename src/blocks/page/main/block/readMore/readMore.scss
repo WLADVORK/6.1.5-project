@@ -2,12 +2,12 @@
   display: flex;
   width: 132px;
 
-  .readMore__icon {
+  &__icon {
     width: 24px;
     height: 24px;
   }
 
-  .readMore__text {
+  &__text {
     font-family: 'TT Lakes';
     font-weight: 500;
     font-size: 16px;

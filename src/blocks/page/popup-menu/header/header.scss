@@ -5,11 +5,11 @@
   gap:16px; 
   align-items: center;
 
-  .header__icon-search {
+  &__icon-search {
     margin-left: auto;
   }
 
-  .header__image {
+  &__image {
     display: block;
   }
 }

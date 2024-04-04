@@ -2,13 +2,17 @@
   background: linear-gradient(90deg, $main-color, $white-color);
   border-top: 1px solid $shadow-color;
 
-  .heading__text {
-    margin: 15px 0 32px;
+  &__text {
+    margin: 15px 16px 16px 0;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
     color: $secondary-text-color;
     text-transform: uppercase;
     display: inline-block;
+
+    @media (min-width:768px) {
+      margin-left: 24px;
+    }
   }
 }

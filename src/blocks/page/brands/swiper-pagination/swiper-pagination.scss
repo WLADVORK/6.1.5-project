@@ -3,6 +3,10 @@
   margin: 16px 0 0 -16px;
   height: 12px;
 
+  @media (min-width: 768px) {
+    display: none;
+  }
+
   .swiper-pagination-bullet {
     background: $pagination-bullet;
     height: 12px;

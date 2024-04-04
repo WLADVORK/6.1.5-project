@@ -7,7 +7,7 @@
   align-items: center;
   position: relative;
 
-  .upperMenu__shadow {
+  &__shadow {
     width: 100%;
     height: 1px;
     position: absolute;
@@ -15,34 +15,54 @@
     background-color: $shadow-color;
   }
 
-  .upperMenu__divider--left {
+  &__divider--left {
     display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
   }
 
-  .upperMenu__divider {
+  &__divider {
     width: 2px;
     height: 32px;
     background-color: $divider-color;
     margin-left: auto;
+
+    @media (min-width: 768px) {
+      margin-left: 0;
+    }
   }
 
-  .upperMenu__icon-profile {
+  &__icon-profile {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+
+  &__icon-call {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+      margin-left: auto;
+    }
+  }
+
+  &__icon-chat {
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+
+  &__icon-profile {
     display: none;
   }
 
-  .upperMenu__icon-call {
-    display: none;
-  }
-
-  .upperMenu__icon-chat {
-    display: none;
-  }
-
-  .upperMenu__icon-profile {
-    display: none;
-  }
-
-  .upperMenu__image {
+  &__image {
     display: block;
   }
 }

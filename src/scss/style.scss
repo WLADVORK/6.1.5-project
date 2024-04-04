@@ -1,4 +1,5 @@
 $white-color: #ffffff;
+$red-color: #FF3E79;
 
 $main-color: #f8f8f8;
 $main-transperent-color: #f8f8f800;
@@ -39,6 +40,8 @@ $secondary-text-color: #7e7e82;
 @import '../blocks/page/popup-menu/mainMenu/lang/lang.scss';
 @import '../blocks/page/popup-feedback/popup-feedback.scss';
 @import '../blocks/page/popup-feedback/feedback-wraper/feedback-wraper.scss';
+@import '../blocks/page/popup-call/popup-call.scss';
+@import '../blocks/page/popup-call/call-wraper/call-wraper.scss';
 
 @font-face {
   font-family: 'TT Lakes';

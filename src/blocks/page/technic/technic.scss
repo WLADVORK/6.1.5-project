@@ -1,5 +1,10 @@
 .technic {
-  .technic__item {
+
+  &__heading {
+    margin-bottom: 16px;
+  }
+
+  &__item {
     width: 240px;
     height: 160px;
     display: flex;
@@ -12,14 +17,14 @@
     padding: 16px;
   }
 
-  .technic__link {
+  &__link {
     display: inline-block;
     font-size: 0px;
     margin-left: auto;
     align-self: flex-end;
   }
 
-  .technic__fade {
+  &__fade {
     position: absolute;
     width: 24px;
     height: 166px;
@@ -29,7 +34,7 @@
     z-index: 2;
   }
 
-  .technic__name {
+  &__name {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;

@@ -1,5 +1,10 @@
 .prices {
-  .prices__item {
+
+  &__heading {
+    margin-bottom: 16px;
+  }
+
+  &__item {
     width: 260px;
     height: 200px;
     display: flex;
@@ -14,40 +19,40 @@
     flex-wrap: wrap;
   }
 
-  .prices__link {
+  &__link {
     display: inline-block;
     font-size: 0px;
     margin-left: auto;
     align-self: center;
   }
 
-  .prices__fade {
+  &__fade {
     position: absolute;
     width: 24px;
     height: 200px;
     background: linear-gradient(90deg, $main-transperent-color, $main-color);
     right: 0;
-    bottom: 16px;
+    bottom: 232px;
     z-index: 2;
   }
 
-  .prices__note {
+  &__note {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.2px;
     color: $main-text-color;
     margin: 16px 16px 0 0;
+  }
 
-    .prices__offer {
-      font-size: 16px;
-      line-height: 24px;
-      letter-spacing: -0.2px;
-      font-weight: 500;
-      margin-top: 16px;
+  &__offer {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-weight: 500;
+    margin-top: 16px;
+  }
 
-      .prices__icon-more {
-        vertical-align: top;
-      }
-    }
+  &__icon-more {
+    vertical-align: top;
   }
 }

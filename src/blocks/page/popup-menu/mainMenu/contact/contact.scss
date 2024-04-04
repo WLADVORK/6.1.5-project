@@ -5,7 +5,7 @@
   gap:0 16px;
   align-content: flex-start;
 
-  .contact__email {
+  &__email {
     font-family: 'TT Lakes';
     font-weight: 500;
     line-height: 24px;
@@ -15,7 +15,7 @@
     margin-top: 16px;
   }
 
-  .contact__number {
+  &__number {
     font-family: 'TT Lakes';
     font-weight: bold;
     line-height: 32px;
@@ -26,15 +26,15 @@
     white-space: nowrap;
   }
 
-  .contact__icon-call {
+  &__icon-call {
     height: 40px;
   }
 
-  .contact__icon-chat {
+  &__icon-chat {
     height: 40px;
   }
 
-  .contact__icon-profile {
+  &__icon-profile {
     height: 40px;
   }
 

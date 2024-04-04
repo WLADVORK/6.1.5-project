@@ -5,7 +5,7 @@
   flex-grow: 1;
   gap: 24px;
 
-  .mainMenu__text {
+  &__text {
     font-family: 'TT Lakes';
     font-weight: 500;
     line-height: 24px;
@@ -15,30 +15,30 @@
     color: $main-text-color;
   }
 
-  .mainMenu__text--active {
+  &__text--active {
     color: $secondary-text-color;
   }
 
-  .mainMenu__button--active {
+  &__button--active {
     position: relative;
   }
 
-  .mainMenu__contact {
+  &__contact {
     margin-left: 24px;
     margin-top: auto;
   }
 
-  .mainMenu__lang {
+  &__lang {
     margin-left: 24px;
     margin-top: -16px;
   }
 
-  .mainMenu__button--disabled:hover {
+  &__button--disabled:hover {
     opacity: 0.5;
     transition: 0.5s;
   }
 
-  .mainMenu__button--active::before {
+  &__button--active::before {
     content: '';
     display: block;
     width: 4px;
@@ -46,6 +46,6 @@
     background: url('/src/img/highlight.svg') no-repeat;
     position: absolute;
     left: 0px;
-    top: 12px;
+    top: -4px;
   }
 }

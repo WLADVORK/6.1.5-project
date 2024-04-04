@@ -3,7 +3,7 @@
   display: flex;
   overflow-x: auto;
 
-  .slideMenu__button {
+  &__button {
     height: 40px;
     padding: 8px 16px;
     white-space: pre;
@@ -20,7 +20,7 @@
     }
   }
 
-  .slideMenu__fade {
+   &__fade {
     width: 24px;
     height: 40px;
     background-image: linear-gradient(

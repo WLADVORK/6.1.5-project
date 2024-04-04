@@ -4,13 +4,29 @@
   align-items: center;
   justify-content: space-between;
 
-  .main__block {
-    margin-left: 16px;
-    margin-right: 16px;
+  @media (min-width: 768px) {
+    flex-direction: row; 
+    justify-content: space-between;
   }
 
-  .main__picture {
+  &__block {
+    margin-left: 16px;
+    margin-right: 16px;
+
+    @media (min-width: 768px) {
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+  }
+
+  &__picture {
     margin-top: 16px;
     margin-bottom: 24px;
+
+    @media (min-width: 768px) {
+      margin: 0;
+      margin-left: 24px;
+      margin-right: 24px;
+    }
   }
 }
