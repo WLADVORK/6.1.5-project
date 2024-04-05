@@ -11,9 +11,33 @@
   top: 0;
   z-index: 9000;
   display: none;
+  filter: opacity(100%);
+
+  @media (min-width: 768px) {
+    width: 320px;
+    height: 100vh;
+  }
+
+  @media (min-width: 1366px) {
+    display: flex;
+    box-shadow: none;
+  }
 
   &__header {
     padding: 0 16px;
     margin-bottom: 8px;
+
+    @media (min-width: 768px) {
+      padding: 0 24px;
+    }
   }
+
+  &--open {
+    display: flex;
+  }
+
+  &--close {
+    display: none;
+  }
+
 }

@@ -3,20 +3,38 @@
   display: flex;
   overflow-x: auto;
 
+  @media (min-width: 1366px) {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
   &__button {
     height: 40px;
     padding: 8px 16px;
     white-space: pre;
     color: $secondary-text-color;
 
+    @media (min-width: 1366px) {
+      padding: 8px 19px;
+      text-align: center;
+    }
+
     &:first-child {
       margin-left: 16px;
+
+      @media (min-width: 768px) {
+        margin-left: 0;
+      }
     }
 
     &:hover {
       border: 2px solid #b8ffec;
       padding: 6px 14px;
       border-radius: 6px;
+
+      @media (min-width: 1366px) {
+        padding: 6px 17px;
+      }
     }
   }
 
@@ -30,5 +48,9 @@
     );
     position: absolute;
     right: 0;
+
+    @media (min-width: 1366px) {
+      display: none;
+    }
   }
 }

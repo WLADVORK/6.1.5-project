@@ -33,15 +33,17 @@ $secondary-text-color: #7e7e82;
 @import '../blocks/page/prices/price/price.scss';
 @import '../blocks/page/prices/time/time.scss';
 @import '../blocks/page/footer/footer.scss';
-@import '../blocks/page/popup-menu/popup-menu.scss';
-@import '../blocks/page/popup-menu/header/header.scss';
-@import '../blocks/page/popup-menu/mainMenu/mainMenu.scss';
-@import '../blocks/page/popup-menu/mainMenu/contact/contact.scss';
-@import '../blocks/page/popup-menu/mainMenu/lang/lang.scss';
-@import '../blocks/page/popup-feedback/popup-feedback.scss';
-@import '../blocks/page/popup-feedback/feedback-wraper/feedback-wraper.scss';
-@import '../blocks/page/popup-call/popup-call.scss';
-@import '../blocks/page/popup-call/call-wraper/call-wraper.scss';
+@import '../blocks/popups/popup-menu/popup-menu.scss';
+@import '../blocks/popups/popup-menu/header/header.scss';
+@import '../blocks/popups/popup-menu/mainMenu/mainMenu.scss';
+@import '../blocks/popups/popup-menu/mainMenu/contact/contact.scss';
+@import '../blocks/popups/popup-menu/mainMenu/lang/lang.scss';
+@import '../blocks/popups/popup-feedback/popup-feedback.scss';
+@import '../blocks/popups/popup-feedback/feedback-wraper/feedback-wraper.scss';
+@import '../blocks/popups/popup-call/popup-call.scss';
+@import '../blocks/popups/popup-call/call-wraper/call-wraper.scss';
+@import '../blocks/popups/popups.scss';
+@import '../blocks/page/prices/prices-table/prices-table.scss';
 
 @font-face {
   font-family: 'TT Lakes';
@@ -93,4 +95,9 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1440px;
 }

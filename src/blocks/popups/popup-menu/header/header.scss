@@ -9,6 +9,12 @@
     margin-left: auto;
   }
 
+  &__icon-cancel {
+
+    @media (min-width: 1366px) {
+      display: none;
+    }
+  }
   &__image {
     display: block;
   }

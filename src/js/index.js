@@ -18,6 +18,7 @@ if (window.innerWidth <= 768) {
   })
 }
 
+const page = document.querySelector('.page')
 const burger = document.querySelector('.upperMenu__icon-burger')
 const popupMenu = document.querySelector('.popup-menu')
 const popupFeedback = document.querySelector('.popup-feedback')
@@ -27,31 +28,113 @@ const cancelFeedback = popupFeedback.querySelector('.feedback-wraper__icon-cance
 const cancelCall = popupCall.querySelector('.call-wraper__icon-cancel')
 const chat = popupMenu.querySelector('.contact__icon-chat')
 const call = popupMenu.querySelector('.contact__icon-call')
+const brands = document.querySelector('.brands__content')
+const technic = document.querySelector('.technic__content')
+const brandsExpand = document.querySelector('.brands__expand')
+const technicExpand = document.querySelector('.technic__expand')
+const brandsText = brandsExpand.querySelector('.expand__text')
+const technicText = technicExpand.querySelector('.expand__text')
+const pageWidth = document.documentElement.scrollWidth
+const styles = window.getComputedStyle(popupMenu);
+
+page.addEventListener('mousedown', () => {
+  if (styles.display == 'flex') {
+    if (pageWidth >= 768) {
+    if (pageWidth < 1366) {
+    popupMenu.classList.remove('popup-menu--open')
+    popupMenu.classList.add('popup-menu--close')
+    }
+    page.style.opacity = '1'
+    popupMenu.style.opacity = '1'
+    popupFeedback.classList.remove('popup-feedback--open')
+    popupFeedback.classList.add('popup-feedback--close')
+    popupCall.classList.remove('popup-call--open')
+    popupCall.classList.add('popup-call--close')
+  }
+  }
+})
+
+popupMenu.addEventListener('mousedown', () => {
+  if (styles.display == 'flex') {
+    if (pageWidth >= 1366) {
+    page.style.opacity = '1'
+    popupMenu.style.opacity = '1'
+    popupFeedback.classList.remove('popup-feedback--open')
+    popupFeedback.classList.add('popup-feedback--close')
+    popupCall.classList.remove('popup-call--open')
+    popupCall.classList.add('popup-call--close')
+    }
+  }
+})
 
 
 burger.addEventListener('click', () => {
-  popupMenu.style.display = 'flex';
+  page.style.opacity = '0.0395'
+  popupMenu.classList.add('popup-menu--open')
+  popupMenu.classList.remove('popup-menu--close')
 })
 
 cancelMenu.addEventListener('click', () => {
-  popupMenu.style.display = 'none';
+  page.style.opacity = '1'
+  popupMenu.classList.remove('popup-menu--open')
+  popupMenu.classList.add('popup-menu--close')
 })
 
+
+
+
 chat.addEventListener('click', () => {
-  popupFeedback.style.display = 'flex';
+  popupFeedback.classList.add('popup-feedback--open')
+  popupFeedback.classList.remove('popup-feedback--close')
+  if (pageWidth >= 1366) {
+    page.style.opacity = '0.0395'
+    popupMenu.style.opacity = '0.0395'
+  }
 })
 
 cancelFeedback.addEventListener('click', () => {
-  popupFeedback.style.display = 'none';
+  popupFeedback.classList.remove('popup-feedback--open')
+  popupFeedback.classList.add('popup-feedback--close')
+  if (pageWidth >= 1366) {
+    page.style.opacity = '1'
+    popupMenu.style.opacity = '1'
+  }
 })
 
 call.addEventListener('click', () => {
-  popupCall.style.display = 'flex';
+  popupCall.classList.add('popup-call--open')
+  popupCall.classList.remove('popup-call--close')
+  if (pageWidth >= 1366) {
+    page.style.opacity = '0.0395'
+    popupMenu.style.opacity = '0.0395'
+  }
 })
 
 cancelCall.addEventListener('click', () => {
-  popupCall.style.display = 'none';
+  popupCall.classList.remove('popup-call--open')
+  popupCall.classList.add('popup-call--close')
+  if (pageWidth >= 1366) {
+    page.style.opacity = '1'
+    popupMenu.style.opacity = '1'
+  }
 })
 
+brandsExpand.addEventListener('click', () => {
+  if (brandsText.textContent === 'Скрыть') {
+    brands.style.height = '160px';
+    brandsText.textContent = 'Показать все';
+  } else {
+    brandsText.textContent = 'Скрыть';
+    brands.style.height = '100%';
+    };
+})
 
-console.log('Works!')
+technicExpand.addEventListener('click', () => {
+  if (technicText.textContent === 'Скрыть') {
+    technic.style.height = '160px';
+    technicText.textContent = 'Показать все';
+  } else {
+    technicText.textContent = 'Скрыть';
+    technic.style.height = '100%';
+    };
+})

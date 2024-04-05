@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="page">
+  <body>
+  <div class="page">
     <div class="page__upperMenu upperMenu">
       <div class="upperMenu__icon-burger"
         ><img class="upperMenu__image" alt="burger-icon" src="img/burger.svg"
@@ -155,38 +156,18 @@
               src="./img/go.svg" /></a
         ></div>
         <div class="brands__item swiper-slide"
+        ><img class="brands__logo" alt="sony-logo" src="./img/sony.svg" /><a
+          class="brands__link"
+          href="#"
           ><img
-            class="brands__logo"
-            alt="lenovo-logo"
-            src="./img/lenovo.svg" /><a class="brands__link" href="#"
-            ><img
-              class="brands__icon-go"
-              alt="brand-icon-go"
-              src="./img/go.svg" /></a
-        ></div>
-        <div class="brands__item swiper-slide"
-          ><img
-            class="brands__logo"
-            alt="samsung-logo"
-            src="./img/samsung.svg" /><a class="brands__link" href="#"
-            ><img
-              class="brands__icon-go"
-              alt="brand-icon-go"
-              src="./img/go.svg" /></a
-        ></div>
-        <div class="brands__item swiper-slide"
-          ><img class="brands__logo" alt="apple-logo" src="./img/apple.svg" /><a
-            class="brands__link"
-            href="#"
-            ><img
-              class="brands__icon-go"
-              alt="brand-icon-go"
-              src="./img/go.svg" /></a
-        ></div>
+            class="brands__icon-go"
+            alt="brand-icon-go"
+            src="./img/go.svg" /></a
+      ></div>
       </div>
       <div class="brands__fade"></div>
       <div class="swiper-pagination"></div>
-      <div class="expand"
+      <div class="brands__expand expand"
         ><img
           class="expand__icon"
           alt="expand-icon"
@@ -275,7 +256,7 @@
       </div>
       <div class="technic__fade"></div>
       <div class="swiper-pagination"></div>
-      <div class="expand"
+      <div class="technic__expand expand"
         ><img
           class="expand__icon"
           alt="expand-icon"
@@ -400,6 +381,72 @@
           /></a>
         </div>
       </div>
+      <div class="prices-table">
+        <div class="prices-table__heading">
+          <div class="prices-table__service">Ремонтные услуги</div>
+          <div class="prices-table__price">Цена</div>
+          <div class="prices-table__time">Срок</div>
+        </div>
+        <div class="prices-table__row">
+          <div class="prices-table__service">Диагностика</div>
+          <div class="prices-table__price">Бесплатно</div>
+          <div class="prices-table__time">30 мин</div>
+          <a href="#" class="prices-table__link"
+            ><img
+              src="./img/order.svg"
+              alt="order-icon"
+              class="prices-table__order-icon"
+          /></a>
+        </div>
+        <div class="prices-table__row">
+          <div class="prices-table__service">Замена дисплея</div>
+          <div class="prices-table__price">1 000 ₽</div>
+          <div class="prices-table__time">30-120 мин</div>
+          <a href="#" class="prices-table__link"
+            ><img
+              src="./img/order.svg"
+              alt="order-icon"
+              class="prices-table__order-icon"
+          /></a>
+        </div>
+        <div class="prices-table__row">
+          <div class="prices-table__service"
+            >Замена полифонического динамика</div
+          >
+          <div class="prices-table__price">1 000 ₽</div>
+          <div class="prices-table__time">30-120 мин</div>
+          <a href="#" class="prices-table__link"
+            ><img
+              src="./img/order.svg"
+              alt="order-icon"
+              class="prices-table__order-icon"
+          /></a>
+        </div>
+        <div class="prices-table__row">
+          <div class="prices-table__service"
+            >Тестирование с выдачей технического заключения</div
+          >
+          <div class="prices-table__price">1 000 ₽</div>
+          <div class="prices-table__time">30-120 мин</div>
+          <a href="#" class="prices-table__link"
+            ><img
+              src="./img/order.svg"
+              alt="order-icon"
+              class="prices-table__order-icon"
+          /></a>
+        </div>
+        <div class="prices-table__row">
+          <div class="prices-table__service">Замена программного обеспечения</div>
+          <div class="prices-table__price">1 000 ₽</div>
+          <div class="prices-table__time">30-120 мин</div>
+          <a href="#" class="prices-table__link"
+            ><img
+              src="./img/order.svg"
+              alt="order-icon"
+              class="prices-table__order-icon"
+          /></a>
+        </div>
+      </div>
       <div class="prices__fade"></div>
       <div class="swiper-pagination"></div>
       <div class="prices__note"
@@ -416,160 +463,181 @@
     </div>
 
     <div class="page__footer footer">
-      <div class="footer__team">© 2019 CPS Разработано командой Apesong </div>
+      <div class="footer__team"
+        >© 2019 CPS<br />Разработано командой Apesong
+      </div>
       <div class="footer__privacy">Политика конфиденциальности</div>
       <div class="footer__note"
         >Информация, размещенная на данной странице, не является публичной
         офертой</div
       >
     </div>
-
-    <div class="page__popup-menu popup-menu">
-      <div class="popup-menu__header header">
-        <div class="header__icon-cancel"
-          ><img class="header__image" alt="cancel-icon" src="img/cancel.svg"
-        /></div>
-        <div class="header__icon-logo"
-          ><img class="header__image" alt="logo-icon" src="img/group.svg"
-        /></div>
-        <div class="header__icon-search"
-          ><img class="header__image" alt="search-icon" src="img/search.svg"
-        /></div>
-      </div>
-      <div class="popup-menu__mainMenu mainMenu">
-        <div class="mainMenu__button mainMenu__button--active"
-          ><p class="mainMenu__text mainMenu__text--active"
-            >Ремонт техники</p
-          ></div
-        >
-        <div class="mainMenu__button mainMenu__button--disabled"
-          ><p class="mainMenu__text">Услуги и сервисы</p></div
-        >
-        <div class="mainMenu__button mainMenu__button--disabled"
-          ><p class="mainMenu__text">Корпоративным клиентам</p></div
-        >
-        <div class="mainMenu__button mainMenu__button--disabled"
-          ><p class="mainMenu__text">Продавцам техники</p></div
-        >
-        <div class="mainMenu__button mainMenu__button--disabled"
-          ><p class="mainMenu__text">Партнерам</p></div
-        >
-        <div class="mainMenu__button mainMenu__button--disabled"
-          ><p class="mainMenu__text">Производителям</p></div
-        >
-        <div class="mainMenu__button mainMenu__button--disabled"
-          ><p class="mainMenu__text">Наши сервисные центры</p></div
-        >
-        <div class="mainMenu__button mainMenu__button--disabled"
-          ><p class="mainMenu__text">Контакты</p></div
-        >
-        <div class="mainMenu__contact contact">
-          <div class="contact__icon-call"
-            ><img class="contact__image" alt="call-icon" src="img/call.svg"
-          /></div>
-          <div class="contact__icon-chat"
-            ><img class="contact__image" alt="chat-icon" src="img/chat.svg"
-          /></div>
-          <div class="contact__icon-profile"
-            ><img
-              class="contact__image"
-              alt="profile-icon"
-              src="img/profile.svg"
-          /></div>
-          <div class="contact__email">mail@cps.com</div>
-          <div class="contact__number">8 800 890 8900</div>
-        </div>
-        <div class="mainMenu__lang lang"
-          ><span class="lang__text lang__text--active">RU</span>
-          <span class="lang__text">EN</span>
-          <span class="lang__text">CH</span></div
-        >
-      </div>
+</div>
+<div class="popups">
+  <div class="popups__popup-menu popup-menu">
+    <div class="popup-menu__header header">
+      <div class="header__icon-cancel"
+        ><img class="header__image" alt="cancel-icon" src="img/cancel.svg"
+      /></div>
+      <div class="header__icon-logo"
+        ><img class="header__image" alt="logo-icon" src="img/group.svg"
+      /></div>
+      <div class="header__icon-search"
+        ><img class="header__image" alt="search-icon" src="img/search.svg"
+      /></div>
     </div>
-
-    <div class="page__popup-feedback popup-feedback">
-      <div class="popup-feedback__wraper feedback-wraper">
-        <div class="feedback-wraper__icon-cancel"
+    <div class="popup-menu__mainMenu mainMenu">
+      <div class="mainMenu__button mainMenu__button--active"
+        ><p class="mainMenu__text mainMenu__text--active"
+          >Ремонт техники</p
+        ></div
+      >
+      <div class="mainMenu__button mainMenu__button--disabled"
+        ><p class="mainMenu__text">Услуги и сервисы</p></div
+      >
+      <div class="mainMenu__button mainMenu__button--disabled"
+        ><p class="mainMenu__text">Корпоративным клиентам</p></div
+      >
+      <div class="mainMenu__button mainMenu__button--disabled"
+        ><p class="mainMenu__text">Продавцам техники</p></div
+      >
+      <div class="mainMenu__button mainMenu__button--disabled"
+        ><p class="mainMenu__text">Партнерам</p></div
+      >
+      <div class="mainMenu__button mainMenu__button--disabled"
+        ><p class="mainMenu__text">Производителям</p></div
+      >
+      <div class="mainMenu__button mainMenu__button--disabled"
+        ><p class="mainMenu__text">Наши сервисные центры</p></div
+      >
+      <div class="mainMenu__button mainMenu__button--disabled"
+        ><p class="mainMenu__text">Контакты</p></div
+      >
+      <div class="mainMenu__contact contact">
+        <div class="contact__icon-call"
+          ><img class="contact__image" alt="call-icon" src="img/call.svg"
+        /></div>
+        <div class="contact__icon-chat"
+          ><img class="contact__image" alt="chat-icon" src="img/chat.svg"
+        /></div>
+        <div class="contact__icon-profile"
           ><img
-            class="popup-feedback__image"
-            alt="cancel-icon"
-            src="img/cancel.svg"
-          />
-        </div>
-        <div class="feedback-wraper__heading">Обратная связь</div>
-        <form action="" method="get" class="feedback-wraper__form">
-          <label class="feedback-wraper__label">
-            <input
-              type="text"
-              class="feedback-wraper__input"
-              placeholder="Имя"
-              maxlength="30"
-            />
-          </label>
-          <label class="feedback-wraper__label">
-            <input
-              maxlength="30"
-              type="tel"
-              class="feedback-wraper__input"
-              placeholder="Телефон"
-            />
-          </label>
-          <label class="feedback-wraper__label">
-            <input
-              maxlength="30"
-              type="email"
-              class="feedback-wraper__input"
-              placeholder="Электронная почта"
-            />
-          </label>
-          <label class="feedback-wraper__label">
-            <textarea
-              type="text"
-              class="feedback-wraper__textarea"
-              placeholder="Сообщение"
-            ></textarea>
-          </label>
-        </form>
-        <div class="feedback-wraper__text">Нажимая “отправить”, вы даете согласие на <span class="feedback-wraper__red">обработку персональных данных</span> и соглашаетесь с нашей <span class="feedback-wraper__red">политикой конфиденциальности</span></div>
+            class="contact__image"
+            alt="profile-icon"
+            src="img/profile.svg"
+        /></div>
+        <div class="contact__email">mail@cps.com</div>
+        <div class="contact__number">8 800 890 8900</div>
       </div>
-      <div class="popup-feedback__icon-send"
+      <div class="mainMenu__lang lang"
+        ><span class="lang__text lang__text--active">RU</span>
+        <span class="lang__text">EN</span>
+        <span class="lang__text">CH</span></div
+      >
+    </div>
+  </div>
+  <div class="popups__popup-feedback popup-feedback">
+    <div class="popup-feedback__wraper feedback-wraper">
+      <div class="feedback-wraper__icon-cancel"
+        ><img
+          class="popup-feedback__image"
+          alt="cancel-icon"
+          src="img/cancel.svg"
+        />
+      </div>
+      <div class="feedback-wraper__heading">Обратная связь</div>
+      <form action="" method="get" class="feedback-wraper__form">
+        <label class="feedback-wraper__label">
+          <input
+            type="text"
+            name="name"
+            class="feedback-wraper__input"
+            placeholder="Имя"
+            maxlength="30"
+            autocomplete="on"
+          />
+        </label>
+        <label class="feedback-wraper__label">
+          <input
+            maxlength="30"
+            name="mobile"
+            type="tel"
+            class="feedback-wraper__input"
+            placeholder="Телефон"
+          />
+        </label>
+        <label class="feedback-wraper__label">
+          <input
+            maxlength="30"
+            autocomplete="on"
+            name="email"
+            type="email"
+            class="feedback-wraper__input"
+            placeholder="Электронная почта"
+          />
+        </label>
+        <label class="feedback-wraper__label">
+          <textarea
+            type="text"
+            name="message"
+            class="feedback-wraper__textarea"
+            placeholder="Сообщение"
+          ></textarea>
+        </label>
+      </form>
+      <div class="feedback-wraper__text"
+        >Нажимая “отправить”, вы даете согласие на
+        <span class="feedback-wraper__red"
+          >обработку персональных данных</span
+        >
+        и соглашаетесь с нашей
+        <span class="feedback-wraper__red"
+          >политикой конфиденциальности</span
+        ></div
+      >
+    </div>
+    <div class="popup-feedback__icon-send"
       ><img
         class="popup-feedback__image"
         alt="send-icon"
         src="img/send.svg"
       />
     </div>
-    </div>
-
-    <div class="page__popup-call popup-call">
-      <div class="popup-call__wraper call-wraper">
-        <div class="call-wraper__icon-cancel"
-          ><img
-            class="popup-call__image"
-            alt="cancel-icon"
-            src="img/cancel.svg"
-          />
-        </div>
-        <div class="call-wraper__heading">Заказать звонок</div>
-        <form action="" method="get" class="call-wraper__form">
-          <label class="call-wraper__label">
-            <input
-              maxlength="30"
-              type="tel"
-              class="call-wraper__input"
-              placeholder="Телефон"
-            />
-          </label>
-        </form>
-        <div class="call-wraper__text">Нажимая “отправить”, вы даете согласие на <span class="call-wraper__red">обработку персональных данных</span> и соглашаетесь с нашей <span class="call-wraper__red">политикой конфиденциальности</span></div>
+  </div>
+  <div class="popups__popup-call popup-call">
+    <div class="popup-call__wraper call-wraper">
+      <div class="call-wraper__icon-cancel"
+        ><img
+          class="popup-call__image"
+          alt="cancel-icon"
+          src="img/cancel.svg"
+        />
       </div>
-      <div class="popup-call__icon-send"
-      ><img
-        class="popup-call__image"
-        alt="send-icon"
-        src="img/send.svg"
-      />
+      <div class="call-wraper__heading">Заказать звонок</div>
+      <form action="" method="get" class="call-wraper__form">
+        <label class="call-wraper__label">
+          <input
+            maxlength="30"
+            type="tel"
+            name="mobile"
+            class="call-wraper__input"
+            placeholder="Телефон"
+          />
+        </label>
+      </form>
+      <div class="call-wraper__text"
+        >Нажимая “отправить”, вы даете согласие на
+        <span class="call-wraper__red">обработку персональных данных</span> и
+        соглашаетесь с нашей
+        <span class="call-wraper__red"
+          >политикой конфиденциальности</span
+        ></div
+      >
     </div>
+    <div class="popup-call__icon-send"
+      ><img class="popup-call__image" alt="send-icon" src="img/send.svg" />
     </div>
-  </body>
+  </div>
+</div>
+</body>
 </html>

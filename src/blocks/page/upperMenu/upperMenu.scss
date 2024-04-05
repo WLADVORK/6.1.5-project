@@ -7,12 +7,22 @@
   align-items: center;
   position: relative;
 
+  @media (min-width: 1366px) {
+    gap:32px;
+    height: 40px;
+    background-color: transparent;
+  }
+
   &__shadow {
     width: 100%;
     height: 1px;
     position: absolute;
     bottom: 0;
     background-color: $shadow-color;
+  
+    @media (min-width: 1366px) {
+      display: none;
+    }
   }
 
   &__divider--left {
@@ -32,6 +42,24 @@
     @media (min-width: 768px) {
       margin-left: 0;
     }
+
+    @media (min-width: 1366px) {
+      display: none;
+    }
+  }
+
+  &__icon-burger {
+
+    @media (min-width: 1366px) {
+      display: none;
+    }
+  }
+
+  &__icon-logo {
+
+    @media (min-width: 1366px) {
+      display: none;
+    }
   }
 
   &__icon-profile {
@@ -49,6 +77,10 @@
       display: block;
       margin-left: auto;
     }
+
+    @media (min-width: 1366px) {
+      display: none;
+    }
   }
 
   &__icon-chat {
@@ -56,10 +88,67 @@
     @media (min-width: 768px) {
       display: block;
     }
+
+    @media (min-width: 1366px) {
+      display: none;
+    }
   }
 
   &__icon-profile {
     display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
+
+    @media (min-width: 1366px) {
+      display: none;
+    }
+  }
+
+  &__icon-repair {
+    
+    @media (min-width: 1366px) {
+      display: flex;
+      height: 40px;
+      margin-left: auto;
+
+      &::before {
+        font-family: "TT Lakes";
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: $main-text-color;
+        align-self: center;
+        margin-right: 8px;
+        content: "Оставить заявку";
+        height: 24px;
+        display: inline-block;
+      }
+    }
+  }
+
+  &__icon-checkstatus {
+
+    @media (min-width: 1366px) {
+      display: flex;
+      height: 40px;
+
+      &::before {
+        font-family: "TT Lakes";
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: $main-text-color;
+        align-self: center;
+        margin-right: 8px;
+        content: "Статус ремонта";
+        height: 24px;
+        display: inline-block;
+      }
+    }
   }
 
   &__image {
