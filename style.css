@@ -1128,11 +1128,11 @@
   z-index: 9000;
   display: none;
   -webkit-filter: opacity(100%);
-          filter: opacity(100%); }
+          filter: opacity(100%);
+  height: 100vh; }
   @media (min-width: 768px) {
     .popup-menu {
-      width: 320px;
-      height: 100vh; } }
+      width: 320px; } }
   @media (min-width: 1366px) {
     .popup-menu {
       display: flex;
@@ -1252,16 +1252,16 @@
   position: absolute;
   top: 0;
   z-index: 9001;
-  font-family: 'TT Lakes', sans-serif; }
+  font-family: 'TT Lakes', sans-serif;
+  height: 100vh; }
   @media (min-width: 768px) {
     .popup-feedback {
       width: 320px;
-      height: 100vh; } }
+      right: 0;
+      box-shadow: 16px 0px 52px 0px #0E185033, -2px 0px 4px 0px #454F7E05; } }
   @media (min-width: 1366px) {
     .popup-feedback {
-      right: 0;
-      width: 440px;
-      box-shadow: 16px 0px 52px 0px #0E185033, -2px 0px 4px 0px #454F7E05; }
+      width: 440px; }
       .popup-feedback::after {
         width: 1px;
         height: 100%;
@@ -1400,16 +1400,16 @@
   position: absolute;
   top: 0;
   z-index: 9001;
-  font-family: 'TT Lakes', sans-serif; }
+  font-family: 'TT Lakes', sans-serif;
+  height: 100vh; }
   @media (min-width: 768px) {
     .popup-call {
       width: 320px;
-      height: 100vh; } }
+      right: 0;
+      box-shadow: 16px 0px 52px 0px #0E185033, -2px 0px 4px 0px #454F7E05; } }
   @media (min-width: 1366px) {
     .popup-call {
-      right: 0;
-      width: 440px;
-      box-shadow: 16px 0px 52px 0px #0E185033, -2px 0px 4px 0px #454F7E05; }
+      width: 440px; }
       .popup-call::after {
         width: 1px;
         height: 100%;
