@@ -8,18 +8,18 @@
   top: 0;
   z-index: 9001;
   font-family: 'TT Lakes', sans-serif;
-
+  height: 100vh;
+  
   @media (min-width: 768px) {
     width: 320px;
-    height: 100vh;
-  }
-
-  @media (min-width: 1366px) {
     right: 0;
-    width: 440px;
     box-shadow:
     16px 0px 52px 0px $popup-shadow-main-color,
     -2px 0px 4px 0px $popup-shadow-secondary-color;
+  }
+
+  @media (min-width: 1366px) {
+    width: 440px;
 
     &::after {
       width: 1px;

@@ -43,20 +43,24 @@ page.addEventListener('mousedown', () => {
     if (pageWidth < 1366) {
     popupMenu.classList.remove('popup-menu--open')
     popupMenu.classList.add('popup-menu--close')
-    }
+  }
     page.style.opacity = '1'
     popupMenu.style.opacity = '1'
     popupFeedback.classList.remove('popup-feedback--open')
     popupFeedback.classList.add('popup-feedback--close')
     popupCall.classList.remove('popup-call--open')
     popupCall.classList.add('popup-call--close')
+    page.style.position = 'relative'
+    page.style.width = 'auto'
+    }
   }
-  }
+  
 })
 
 popupMenu.addEventListener('mousedown', () => {
   if (styles.display == 'flex') {
     if (pageWidth >= 1366) {
+    
     page.style.opacity = '1'
     popupMenu.style.opacity = '1'
     popupFeedback.classList.remove('popup-feedback--open')
@@ -70,6 +74,8 @@ popupMenu.addEventListener('mousedown', () => {
 
 burger.addEventListener('click', () => {
   page.style.opacity = '0.0395'
+  page.style.position = 'fixed'
+  page.style.width = '100%'
   popupMenu.classList.add('popup-menu--open')
   popupMenu.classList.remove('popup-menu--close')
 })
@@ -78,14 +84,25 @@ cancelMenu.addEventListener('click', () => {
   page.style.opacity = '1'
   popupMenu.classList.remove('popup-menu--open')
   popupMenu.classList.add('popup-menu--close')
+  popupFeedback.classList.remove('popup-feedback--open')
+  popupFeedback.classList.add('popup-feedback--close')
+  popupCall.classList.remove('popup-call--open')
+  popupCall.classList.add('popup-call--close')
+  page.style.position = 'relative'
+  page.style.width = 'auto'
 })
 
 
 
 
 chat.addEventListener('click', () => {
+  page.style.opacity = '0.0395'
+  page.style.position = 'fixed'
+  page.style.width = '100%'
   popupFeedback.classList.add('popup-feedback--open')
   popupFeedback.classList.remove('popup-feedback--close')
+  popupCall.classList.remove('popup-call--open')
+  popupCall.classList.add('popup-call--close')
   if (pageWidth >= 1366) {
     page.style.opacity = '0.0395'
     popupMenu.style.opacity = '0.0395'
@@ -98,12 +115,19 @@ cancelFeedback.addEventListener('click', () => {
   if (pageWidth >= 1366) {
     page.style.opacity = '1'
     popupMenu.style.opacity = '1'
+    page.style.position = 'relative'
+    page.style.width = 'auto'
   }
 })
 
 call.addEventListener('click', () => {
+  page.style.opacity = '0.0395'
+  page.style.position = 'fixed'
+  page.style.width = '100%'
   popupCall.classList.add('popup-call--open')
   popupCall.classList.remove('popup-call--close')
+  popupFeedback.classList.remove('popup-feedback--open')
+  popupFeedback.classList.add('popup-feedback--close')
   if (pageWidth >= 1366) {
     page.style.opacity = '0.0395'
     popupMenu.style.opacity = '0.0395'
@@ -116,6 +140,8 @@ cancelCall.addEventListener('click', () => {
   if (pageWidth >= 1366) {
     page.style.opacity = '1'
     popupMenu.style.opacity = '1'
+    page.style.position = 'relative'
+    page.style.width = 'auto'
   }
 })
 
