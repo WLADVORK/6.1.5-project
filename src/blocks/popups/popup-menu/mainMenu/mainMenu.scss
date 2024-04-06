@@ -39,14 +39,12 @@
     transition: 0.5s;
   }
 
-  &__button--active::before {
-    content: '';
-    display: block;
+  &__highlight {
     width: 4px;
     height: 32px;
-    background: url('/src/img/highlight.svg') no-repeat;
     position: absolute;
     left: 0px;
     top: -4px;
   }
+
 }

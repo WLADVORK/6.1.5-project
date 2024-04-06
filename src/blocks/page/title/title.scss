@@ -24,23 +24,11 @@
     @media (min-width: 1366px) {
       margin-left: 32px;
     }
+  }
 
-    &::before {
-      content: '';
-      display: block;
-      width: 4px;
-      height: 40px;
-      background: url('/src/img/highlight--large.svg') no-repeat;
-      position: absolute;
-      left: -16px;
-
-      @media (min-width: 768px) {
-        left: -24px;
-      }
-
-      @media (min-width: 1366px) {
-        left: -32px;
-      }
-    }
+  &__highlight {
+    width: 4px;
+    height: 40px;
+    position: absolute;
   }
 }

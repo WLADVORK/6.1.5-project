@@ -21,23 +21,20 @@
     color:$main-text-color;
     margin: 24px 0 8px 0;
     position: relative;
+  }
 
-    &::before {
-      content: '';
-      display: block;
-      width: 4px;
-      height: 40px;
-      background: url('/src/img/highlight--large.svg') no-repeat;
-      position: absolute;
-      left: -16px;
+  &__highlight {
+    width: 4px;
+    height: 40px;
+    position: absolute;
+    left: -16px;
 
-      @media (min-width: 768px) {
-        left: -24px;
-      }
+    @media (min-width: 768px) {
+      left: -24px;
+    }
 
-      @media (min-width: 1366px) {
-        left: -32px;
-      }
+    @media (min-width: 1366px) {
+      left: -32px;
     }
   }
 
