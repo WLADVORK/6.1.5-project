@@ -37,39 +37,6 @@ const technicText = technicExpand.querySelector('.expand__text')
 const pageWidth = document.documentElement.scrollWidth
 const styles = window.getComputedStyle(popupMenu);
 
-page.addEventListener('mousedown', () => {
-  if (styles.display == 'flex') {
-    if (pageWidth >= 768) {
-    if (pageWidth < 1366) {
-    popupMenu.classList.remove('popup-menu--open')
-    popupMenu.classList.add('popup-menu--close')
-  }
-    page.style.opacity = '1'
-    popupMenu.style.opacity = '1'
-    popupFeedback.classList.remove('popup-feedback--open')
-    popupFeedback.classList.add('popup-feedback--close')
-    popupCall.classList.remove('popup-call--open')
-    popupCall.classList.add('popup-call--close')
-    page.style.position = 'relative'
-    page.style.width = 'auto'
-    }
-  }
-  
-})
-
-popupMenu.addEventListener('mousedown', () => {
-  if (styles.display == 'flex') {
-    if (pageWidth >= 1366) {
-    
-    page.style.opacity = '1'
-    popupMenu.style.opacity = '1'
-    popupFeedback.classList.remove('popup-feedback--open')
-    popupFeedback.classList.add('popup-feedback--close')
-    popupCall.classList.remove('popup-call--open')
-    popupCall.classList.add('popup-call--close')
-    }
-  }
-})
 
 
 burger.addEventListener('click', () => {
@@ -91,8 +58,6 @@ cancelMenu.addEventListener('click', () => {
   page.style.position = 'relative'
   page.style.width = 'auto'
 })
-
-
 
 
 chat.addEventListener('click', () => {
